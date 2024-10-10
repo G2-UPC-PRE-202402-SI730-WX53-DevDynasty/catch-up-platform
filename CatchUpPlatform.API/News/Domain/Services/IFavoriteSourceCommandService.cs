@@ -1,9 +1,11 @@
-﻿using CatchUpPlatform.API.News.Domain.Model.Commands;
+﻿using CatchUpPlatform.API.News.Domain.Model.Aggregates;
+using CatchUpPlatform.API.News.Domain.Model.Commands;
 
 namespace CatchUpPlatform.API.News.Domain.Services
 {
     public interface IFavoriteSourceCommandService {
-        Task<IFavoriteSourceCommandService?> Handle(CreateFavoriteSource command);
-    
-}
+        Task<FavoriteSource?> Handle(CreateFavoriteSourceCommand command);
+        Task<FavoriteSource?> Handle(DeleteFavoriteSourceCommand command);
+        Task<FavoriteSource?> Handle(UpdateFavoriteSourceCommand command);
+    }
 }
