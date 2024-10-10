@@ -8,5 +8,9 @@ namespace CatchUpPlatform.API.News.Domain.Services
         Task<FavoriteSource?> Handle(GetFavoriteSourceByIdQuery query);
 
         Task<FavoriteSource?> Handle(GetFavoriteSourceByNewsApiKeyAndSourceIdQuery query);
+        
+        Task<FavoriteSource?> Handle(GetAllFavoriteSourcesByNewsApiKeyQuery query);
+        
     }
+    
 }

@@ -6,12 +6,17 @@ namespace CatchUpPlatform.API.News.Application.Internal
 {
     public class FavoriteSourceQueryService : IFavoriteSourceQueryService
     {
-        Task<FavoriteSource?> IFavoriteSourceQueryService.Handle(GetFavoriteSourceByIdQuery query)
+        public Task<FavoriteSource?> Handle(GetFavoriteSourceByIdQuery query)
         {
             throw new NotImplementedException();
         }
 
-        Task<FavoriteSource?> IFavoriteSourceQueryService.Handle(GetFavoriteSourceByNewsApiKeyAndSourceIdQuery query)
+        public Task<FavoriteSource?> Handle(GetFavoriteSourceByNewsApiKeyAndSourceIdQuery query)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<FavoriteSource?> Handle(GetAllFavoriteSourcesByNewsApiKeyQuery query)
         {
             throw new NotImplementedException();
         }
