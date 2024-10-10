@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="News\Application\" />
     <Folder Include="News\Domain\Model\Entities\" />
     <Folder Include="News\Domain\Model\Valueobjects\" />
     <Folder Include="News\Domain\Repositories\" />
