@@ -1,5 +1,4 @@
-﻿namespace CatchUpPlatform.API.News.Domain.Services;
-using CatchUpPlatform.API.News.Domain.Model.Commands;
+﻿using CatchUpPlatform.API.News.Domain.Model.Commands;
 
 namespace CatchUpPlatform.API.News.Domain.Services
 {
